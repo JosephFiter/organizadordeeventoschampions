@@ -1,0 +1,71 @@
+.scheduler-container {
+  padding: 1em;
+  animation: fadeIn 1s ease-in;
+}
+
+.scheduler-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #132257;
+  border-radius: 10px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  overflow-x: auto;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-cell {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  min-width: 80px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff2;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.grid-cell.block:hover {
+  background-color: #0055a4aa;
+}
+
+.grid-cell.time {
+  background-color: #001;
+  font-weight: bold;
+  color: #fff;
+}
+
+.grid-cell.me {
+  background-color: #00c851aa;
+}
+
+.participant {
+  font-size: 0.8em;
+  background-color: #ffffff55;
+  border-radius: 4px;
+  padding: 2px 5px;
+  margin: 1px 0;
+}
+
+@media (max-width: 768px) {
+  .grid-cell {
+    min-width: 50px;
+    font-size: 0.7em;
+  }
+
+  .scheduler-header h1 {
+    font-size: 1.2em;
+  }
+}

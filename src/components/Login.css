@@ -1,0 +1,34 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  animation: fadeIn 1s;
+}
+
+.name-input {
+  margin-top: 1em;
+  display: flex;
+  gap: 0.5em;
+}
+
+button {
+  background-color: #0055a4;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
