@@ -1,9 +1,9 @@
 // App.tsx
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import Login from './components/Login';
 import Scheduler from './components/Scheduler';
 import { db } from './firebase';
-import { doc, getDoc, setDoc, deleteDoc } from 'firebase/firestore';
+import { doc, getDoc } from 'firebase/firestore';
 
 const App = () => {
   const [username, setUsername] = useState<string | null>(null);
